@@ -1,0 +1,63 @@
+<script lang="ts">
+	import type { Props } from '..';
+
+	let {
+		text = $bindable(''),
+		number = $bindable(4),
+		char = $bindable('*'),
+		...rest
+	}: Props = $props();
+
+	let redacted = $state('');
+
+	const isEmail = (input: string) =>
+		/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(input);
+
+	function redactEmail(input: string): string {
+		const [user, domain] = input.split('@');
+		if (user.length <= 1) return `${user}@${domain}`;
+
+		const visible = user.slice(0, 2);
+		const stars = char.repeat(Math.min(Math.max(user.length - 2, 5), 10));
+		return `${visible}${stars}@${domain}`;
+	}
+
+	function redactText(input: string): string {
+		const stars = char.repeat(Math.min(Math.max(text.length - number, 5), 10));
+		const visible = input.slice(-number);
+		return `${stars}${visible}`;
+	}
+
+	$effect(() => {
+		redacted = isEmail(text) ? redactEmail(text) : redactText(text);
+	});
+</script>
+
+<span {...rest}>
+	{redacted}
+</span>
+
+<!-- @component
+	- Concept by TreltaSev
+    - Created by Amaan Dhanani, TreltaSev modified it
+	- Amaan Dhanani has updated it since
+
+    @file TextRedactor.svelte
+    @description
+    Conditionally redacts email addresses or plain strings. For emails, the first 2 characters are preserved and the rest are masked up to 10 characters using the `char` prop. Non-email text is masked except for the last `number` of characters.
+
+    @props
+    - `text`: The input string to mask. Can be an email or regular text.
+    - `number`: Number of characters to leave unmasked at the end (non-email only). Default is 4.
+    - `char`: Masking character. Default is '*'.
+    - `className`: Optional Tailwind utility classes for styling the wrapper element.
+
+    @rendered
+    Renders a `<span>` element with the masked string and optional custom classes.
+
+    @usage
+    ```svelte
+    <TextRedactor text="user@example.com" />
+    <TextRedactor text="secretinfo12345" number={5} char="#" className="text-gray-500" />
+    ```
+-->
