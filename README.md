@@ -1,52 +1,65 @@
-# Svelte Component Library
+# Introduction
 
-A reusable **Svelte component library** designed to speed up development by allowing components to be shared across multiple projects without repetitive copy-and-paste.
+So, TreltaSev created a component library, so I decided to create my own (using his permission of course). I also like the components in his library, so his library is a dependency of mine. This means that to import his components, you can do so in my library.
 
-This project is inspired by **sk-clib** by TreltaSev:  
-https://github.com/TreltaSev/sk-clib  
+### Migration Example
 
-Permission has been granted by the original author to create an npm package with similar functionality.
+Instead of importing from the base library:
+```svelte
+import { Flex } from 'sk-clib/ui';
+```
 
----
-
-## Purpose
-
-This library is **not tied to any specific project**. It exists to provide a growing collection of reusable, clean, and flexible Svelte components that can be used in any current or future project.
-
----
-
-## Components
-
-- **Text**
-- **Input Field**
-- More common UI components will be added over time
+You can import directly from this library:
+```svelte
+import { Flex } from '@amaand/sveltekit-comps';
+```
 
 ---
 
-## Goals
+# Available Components
 
-- Reduce boilerplate and duplicated code  
-- Maintain consistent UI across projects  
-- Improve development speed  
-- Provide simple, well-documented components  
-- Publish as an **npm package**
+| Component | Description | Original Source |
+| :--- | :--- | :--- |
+| **CodeInput** | One-Time Password (OTP) codes | Custom |
+| **Dropdown** | Form-optimized dropdown selection | Custom |
+| **Input** | Form input supporting text and password visibility toggle | Custom |
+| **LightDark** | Application theme toggle switcher | Custom |
+| **Textarea** | Multi-line text input field | Custom |
+| **TextRedactor** | Redacts sensitive data like emails, tokens, or custom text | Custom |
+| **Button** | Highly interactive button utility | sk-clib |
+| **Frame** | Fundamental `<div>` container wrapper | sk-clib |
+| **Flex** | Flexbox layout `<div>` alignment container | sk-clib |
+| **Text** | Typography and text rendering element | sk-clib |
+| **ThemeInit** | Global theme initialization and styling helper | sk-clib |
+| **Spacer** | Layout spacing structural element | sk-clib |
 
----
-
-## Resources
-
-- Building a Svelte Component Library (YouTube):  
-  https://www.youtube.com/watch?v=_5IZi9xyDFY
-
----
-
-## Status
-
-🚧 Early development — components and documentation are still evolving.
+*Note on Input Components: Both libraries offer an input field. To access the sk-clib variation instead of the custom version, use `InputTreltaSev`. Future updates may combine features from both components.*
 
 ---
 
-## Credits
+# Inline Editor Documentation
+This project uses Svelte's @component tag to provide instant, inline documentation directly in your code editor.To understand what any component does, how to use it, or what props it accepts, simply hover your cursor over the component's name in any file. A tooltip will automatically pop up with its summary and usage rules so you do not have to open the source file or search external docs.
 
-- Inspired by **TreltaSev/sk-clib**
-- Used with permission
+---
+
+# Roadmap
+
+The following components are currently under development and will be released in an upcoming version:
+* **BottomBarNavigation** — Mobile-first bottom navigation bar.
+* **SuccessErrorToast** — Global status alert notification banner.
+
+---
+
+# Release History
+
+
+`1.2.3` - it's Major.Minor.Patch.
+
+1 = Major → breaking changes / major redesign
+2 = Minor → new features that don't break existing code
+3 = Patch → bug fixes / small corrections
+
+| Release | Date | Description |
+| :--- | :--- | :--- |
+| **`0.1.0`** | 8/1/2026 | Experimental Public Release — Initial public release featuring **CodeInput, Dropdown, Input, InputTreltaSev, LightDark, Textarea, TextRedactor, Button, Frame, Flex, Text, ThemeInit, and Spacer**.  |
+

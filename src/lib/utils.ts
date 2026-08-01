@@ -16,7 +16,7 @@ import { twMerge } from 'tailwind-merge';
  * cn("p-2", condition && "bg-red-500", "p-4")
  * // → "bg-red-500 p-4"
  *
- * Created by GitHub User TreltaSev
+ * Created by TreltaSev
  */
 export function cn(...inputs: (ClassValue | unknown)[]) {
 	return twMerge(clsx(inputs));

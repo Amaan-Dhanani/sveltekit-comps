@@ -1,4 +1,4 @@
-import type { ClassValue, HTMLAttributes } from "svelte/elements";
+import type { HTMLAttributes } from "svelte/elements";
 
 export type tTextRedactorProps = HTMLAttributes<HTMLSpanElement> & {
     
