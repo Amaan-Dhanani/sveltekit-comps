@@ -47,7 +47,6 @@
     "svelte-check": "^4.7.4",
     "tailwindcss": "^4.1.17",
     "typescript": "^6.0.3",
-    "unplugin-icons": "^23.0.1",
     "vite": "^8.1.5"
   },
   "keywords": [
@@ -56,6 +55,7 @@
     "sveltekit"
   ],
   "dependencies": {
+    "@iconify/svelte": "^5.2.2",
     "sk-clib": "^2.0.13"
   }
 }

@@ -1,9 +1,8 @@
 <script lang="ts">
   import { theme } from "sk-clib/theme";
   import { Frame, Flex, Text } from "sk-clib";
+  import Icon from "@iconify/svelte";
   import { cn } from "$lib/utils";
-  import IconDark from "~icons/material-symbols/dark-mode-outline";
-  import IconLight from "~icons/material-symbols/light-mode-outline";
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
   import { type Props } from "..";
@@ -37,9 +36,15 @@
           )}
         >
           {#if isDark}
-            <IconDark class="size-6" />
+            <Icon
+              icon="material-symbols:dark-mode-outline"
+              class="size-6"
+            />
           {:else}
-            <IconLight class="size-6" />
+            <Icon
+              icon="material-symbols:light-mode-outline"
+              class="size-6"
+            />
           {/if}
         </button>
 

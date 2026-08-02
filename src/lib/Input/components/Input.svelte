@@ -1,8 +1,7 @@
 <script lang="ts">
   import { cn } from "$lib/utils";
   import type { Props } from "..";
-  import Eye from "~icons/heroicons/eye";
-  import EyeSlash from "~icons/heroicons/eye-slash";
+  import Icon from "@iconify/svelte";
 
   let {
     type = "",
@@ -26,6 +25,7 @@
 
   // --- password toggling
   let showPassword = $state(false);
+
   function togglePassword() {
     showPassword = !showPassword;
   }
@@ -51,18 +51,14 @@
       class="absolute inset-y-0 inset-e-0 z-20 cursor-pointer items-center rounded-e-md px-3 text-on-secondary focus:text-primary focus:outline-none dark:text-white dark:focus:text-blue-500"
       aria-label="Toggle password visibility"
     >
-      <!-- eye / eye‑off icon -->
       {#if showPassword}
-        <!-- eye‑off -->
-        <EyeSlash />
+        <Icon icon="heroicons:eye-slash" />
       {:else}
-        <!-- eye -->
-        <Eye />
+        <Icon icon="heroicons:eye" />
       {/if}
     </button>
   </div>
 {:else}
-  <!-- Plain input -->
   <input class={inputCls} {type} id={inputId} bind:value {...rest} />
 {/if}
 
