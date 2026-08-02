@@ -1,5 +1,10 @@
 <script lang="ts">
     import './layout.css';
+    import { Input, ThemeInit } from '$lib';
+
 </script>
 
-Welcome to the emptiest test page.
+<ThemeInit defaults={{ defaultSeedColor: '#3d5cff', defaultMode: 'dark', defaultVariant: 'vibrant' }} />
+
+<Input type="text" class="mb-4" name="email" label="Email" />
+<Input type="password" class="mb-7" label="Password" name="password" />
