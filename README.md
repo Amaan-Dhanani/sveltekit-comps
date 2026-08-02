@@ -60,5 +60,6 @@ Versions follow the `Major.Minor.Patch` format:
 
 | Release | Date | Description |
 | :--- | :--- | :--- |
+| **`0.1.2`** | 8/1/2026 | **Patch Release** — Removed the remaining `unplugin-icons` configuration from the build setup and completed the migration to `@iconify/svelte`. |
 | **`0.1.1`** | 8/1/2026 | **Patch Release** — Fixed icon imports by migrating from `unplugin-icons` to `@iconify/svelte`, improving compatibility when using the library as an npm dependency. |
 | **`0.1.0`** | 8/1/2026 | **Experimental Public Release** — Initial public release featuring **CodeInput, Dropdown, Input, InputTreltaSev, LightDark, Textarea, TextRedactor, Button, Frame, Flex, Text, ThemeInit, and Spacer**. |
