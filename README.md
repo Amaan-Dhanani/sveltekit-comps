@@ -60,6 +60,7 @@ Versions follow the `Major.Minor.Patch` format:
 
 | Release | Date | Description |
 | :--- | :--- | :--- |
+| **`0.1.5`** | 8/2/2026 | **Patch Release** — TailwindCSS styles are not being generated properly for any components. This is first attempt. |
 | **`0.1.4`** | 8/2/2026 | **Patch Release** — Fixed improper TailwindCSS for **Input** component, added and tested style imports. |
 | **`0.1.3`** | 8/1/2026 | **Patch Release** — Removed unused development dependencies, completing the migration to `@iconify/svelte`. |
 | **`0.1.2`** | 8/1/2026 | **Patch Release** — Removed the remaining `unplugin-icons` configuration from the build setup. |
