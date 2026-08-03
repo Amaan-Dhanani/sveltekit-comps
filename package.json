@@ -13,8 +13,7 @@
   "files": [
     "dist",
     "!dist/**/*.test.*",
-    "!dist/**/*.spec.*",
-    "src/routes/layout.css"
+    "!dist/**/*.spec.*"
   ],
   "sideEffects": [
     "**/*.css"
@@ -29,7 +28,7 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
-    "./style": "./src/routes/layout.css"
+    "./style": "./dist/lib/layout.css"
   },
   "peerDependencies": {
     "svelte": "^5.0.0"

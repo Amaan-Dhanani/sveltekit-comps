@@ -1,5 +1,5 @@
 <script lang="ts">
-    import './layout.css';
+    import '$lib/layout.css';
     import { Input, ThemeInit } from '$lib';
 
 </script>
