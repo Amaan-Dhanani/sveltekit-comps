@@ -28,7 +28,7 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
-    "./style": "./dist/lib/layout.css"
+    "./style": "./dist/layout.css"
   },
   "peerDependencies": {
     "svelte": "^5.0.0"
