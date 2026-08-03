@@ -60,7 +60,7 @@ Versions follow the `Major.Minor.Patch` format:
 
 | Release | Date | Description |
 | :--- | :--- | :--- |
-| **`0.1.9`** | 8/3/2026 | **Patch Release** — Changed file structure and package.json, this is my *sixth* attempt to fix this TailwindCSS issue. |
+| **`0.1.10`** | 8/3/2026 | **Patch Release** — Changed file structure and package.json, this is my *sixth* attempt to fix this TailwindCSS issue. |
 | **`0.1.9`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *fifth* attempt to fix this TailwindCSS issue. |
 | **`0.1.8`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *fourth* attempt to fix this TailwindCSS issue. |
 | **`0.1.7`** | 8/3/2026 | **Patch Release** — Changed some styling imports, npm update, and package.json. This is my *third* attempt. |
