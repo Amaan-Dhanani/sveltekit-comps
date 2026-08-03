@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @import 'sk-clib/style';
-@source "../lib";
 
 /* == THEME == */
 @layer utilities {

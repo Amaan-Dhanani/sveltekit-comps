@@ -27,7 +27,8 @@
       "svelte": "./dist/index.js",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
-    }
+    },
+    "./style": "./src/routes/layout.css"
   },
   "peerDependencies": {
     "svelte": "^5.0.0"
