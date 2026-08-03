@@ -60,11 +60,12 @@ Versions follow the `Major.Minor.Patch` format:
 
 | Release | Date | Description |
 | :--- | :--- | :--- |
-| **`0.1.10`** | 8/3/2026 | **Patch Release** — Changed file structure and package.json, this is my *sixth* attempt to fix this TailwindCSS issue. |
-| **`0.1.9`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *fifth* attempt to fix this TailwindCSS issue. |
-| **`0.1.8`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *fourth* attempt to fix this TailwindCSS issue. |
-| **`0.1.7`** | 8/3/2026 | **Patch Release** — Changed some styling imports, npm update, and package.json. This is my *third* attempt. |
-| **`0.1.6`** | 8/2/2026 | **Patch Release** — Changed some styling imports, this is my *second* attempt to fix this TailwindCSS issue. |
+| **`0.1.11`** | 8/3/2026 | **Patch Release** — Changed file structure and package.json, this is my *7th* attempt to fix this TailwindCSS issue. |
+| **`0.1.10`** | 8/3/2026 | **Patch Release** — Changed file structure and package.json, this is my *6th* attempt to fix this TailwindCSS issue. |
+| **`0.1.9`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *5th* attempt to fix this TailwindCSS issue. |
+| **`0.1.8`** | 8/3/2026 | **Patch Release** — Changed some styling imports, this is my *4th* attempt to fix this TailwindCSS issue. |
+| **`0.1.7`** | 8/3/2026 | **Patch Release** — Changed some styling imports, npm update, and package.json. This is my *3rd* attempt. |
+| **`0.1.6`** | 8/2/2026 | **Patch Release** — Changed some styling imports, this is my *2nd* attempt to fix this TailwindCSS issue. |
 | **`0.1.5`** | 8/2/2026 | **Patch Release** — TailwindCSS styles are not being generated properly for any components. I built the package differently, but nothing changed. |
 | **`0.1.4`** | 8/2/2026 | **Patch Release** — Fixed improper TailwindCSS for **Input** component, added and tested style imports. |
 | **`0.1.3`** | 8/1/2026 | **Patch Release** — Removed unused development dependencies, completing the migration to `@iconify/svelte`. |
